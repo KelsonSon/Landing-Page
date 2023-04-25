@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --bg-color: #484450;
+    --text-color: #c4c8c5;
+    --bg-opacity: rgba(128, 121, 143, 0.1);
+}
+
+body {
+    background-color: var(--bg-color) ;
+}
+section {
+    position: relative;
+    padding: 80px 100px;
+    color: var(--text-color);
+}
+
+.container, section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    padding: 80px 100px;
+    color: var(--text-color);
+}
+
+.container {
+    flex-direction: column;
+}
+
+.main-title{
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.content{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .div-img{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .div-img img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content .text-box{
+    
+    z-index: 222;
+    background: var(--bg-opacity);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid var(--bg-opacity);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+.text-justify{
+    text-align: justify;
+}
+.content .text-box h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.text-box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.text-box form input{
+    width: 320px;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    height: 30px;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+.input-container .icon {
+    padding: 5px;
+    background: #fff;
+    color: var(--bg-color);
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid var(--bg-color);
+}
+.text-box form button{
+    border-radius: 5px;
+    background-color: var(--text-color);
+    border: none;
+    width: 260px;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.text-box form button:hover{
+    background-color: #fff;
+    transform: scale(1.2);
+    color: var(--bg-color);
+}
+
+.media-icons{
+    margin-top: 100px;
+}
+
+.media-icons a{
+    color: var(--text-color);
+    font-size: 2em;
+    margin: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+.media-icons a:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.section-title {
+    font-size: 3em;
+    margin-bottom: 80px;
+}
+
+.info-title{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.info{
+    width: 700px;
+    margin-left: 50px;
+}
+
+.media-info{
+    width: 400px;
+    margin-left: 50px;
+}
+.media-info li{
+    list-style: none;
+    font-size: 1.4em;
+}
+
+.media-info li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.media-info li a:hover {
+    color: #fff;
+}
+
+.media-info li:not(:last-child){
+    margin-bottom: 50px;
+}
+
+
+
+.sec-03{
+    margin-bottom: 100px;
+}
